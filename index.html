@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Hello there this is my porfolio page.">
+    <meta name="author" content="Samuel">
+    <title>Samuel B.'s Portfolio</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <!-- Bootstrap + samuel main styles -->
+	<link rel="stylesheet" href="assets/css/samuel_befikadu.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init({
+              publicKey: "kGvNW7jd8vkArEKOS",
+            });
+        })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                // these IDs from the previous steps
+                emailjs.sendForm('contact_service', 'contact_form', this)
+                    .then(() => {
+                        console.log('SUCCESS!');
+                    }, (error) => {
+                        console.log('FAILED...', error);
+                    });
+            });
+        }
+    </script>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+    <header class="header">
+        <div class="container">
+            <ul class="social-icons pt-3">
+                <li class="social-item"><a class="social-link text-light" href="https://t.me/esamif" target="_blank"><i class="ti-email" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://www.linkedin.com/in/samuel-befikadu-2a967521a/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                <li class="social-item"><a class="social-link text-light" href="https://github.com/belm960" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+            </ul>  
+            <div class="header-content">
+                <h4 class="header-subtitle" >Hello, I am</h4>
+                <h1 class="header-title">Samuel B.</h1>
+                <h6 class="header-mono" >Mobile | Web Application <strong>Developer</strong></h6>
+                <a href="./assets/Samuel Befikadu resume.pdf" download="Samuel Befikadu resume.pdf" class="btn btn-primary btn-rounded"><i class="ti-printer pr-2"></i>Print Resume</a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white" data-spy="affix" data-offset-top="510">
+        <div class="container">
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse mt-sm-20 navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#resume" class="nav-link">Resume</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav brand">
+                    <img src="assets/imgs/avatar4.jpg" alt="" class="brand-img">
+                    <li class="brand-txt">
+                        <h5 class="brand-title">Samuel B.</h5>
+                        <div class="brand-subtitle">Mobile | Web Application <strong>Developer</strong></div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href="#portfolio" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item last-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div id="about" class="row about-section">
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Who am I ?</h3>
+                <span class="line mb-5"></span>
+                <h5 class="mb-3">Mobile | Web Application <strong>Developer</strong> Located In Our Lovely Earth</h5>
+                <p class="mt-20">Hey there! I'm Samuel B., your friendly neighborhood coder. By day, I'm a Flutter, Angular, and .NET developer, crafting apps smoother than butter and websites more dynamic than your favorite action flick.
+                    
+                    When I'm not wrestling with code, you’ll find me belting out my favorite tunes at home or plotting my next caffeine fix. Dive in, check out my projects, and let's turn your ideas into digital awesomeness. Ready to get coding? Let's do this!</p>
+                <a href="./assets/Samuel Befikadu resume.pdf" download="Samuel Befikadu resume.pdf" class="btn btn-outline-danger"><i class="icon-down-circled2 "></i>Download My CV</a>
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">Personal Info</h3>
+                <span class="line mb-5"></span>
+                <ul class="mt40 info list-unstyled">
+                    <li><span>Birthdate</span> : 10/05/2001</li>
+                    <li><span>Email</span> : sawerkit23@gmail.com</li>
+                    <li><span>Phone</span> : + (251) 996-995-878</li>
+                    <li><span>Address</span> : Arada Sub-City, Addis Ababa, Ethiopia.</li>
+                </ul>
+                <ul class="social-icons pt-3">
+                    <li class="social-item"><a class="social-link" href="https://t.me/esamif" target="_blank"><i class="ti-email" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://www.linkedin.com/in/samuel-befikadu-2a967521a/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                    <li class="social-item"><a class="social-link" href="https://github.com/belm960" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                </ul>  
+            </div>
+            <div class="col-lg-4 about-card">
+                <h3 class="font-weight-light">My Expertise</h3>
+                <span class="line mb-5"></span>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-android icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Flutter</h6>
+                        <p class="subtitle">Experienced Flutter developer proficient in crafting high-quality, dynamic mobile apps, with a portfolio of successful applications.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-desktop icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>Angular</h6>
+                        <p class="subtitle">Skilled Angular developer specializing in building robust and scalable web applications, with a passion for creating intuitive user interfaces and optimizing performance.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-1 text-danger pt-1"><i class="ti-panel icon-lg"></i></div>
+                    <div class="col-10 ml-auto mr-3">
+                        <h6>.Net</h6>
+                        <p class="subtitle">Seasoned .NET developer with a knack for building robust, scalable applications, leveraging the power of C# and .NET framework to deliver efficient solutions.</p>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Resume Section-->
+    <section class="section" id="resume">
+        <div class="container">
+            <h2 class="mb-5"><span class="text-danger">My</span> Resume</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Expertise</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">OCT 2023 - MAY 2024</h6>
+                            <P>Software Developer and System Admin</P>
+                            <P class="subtitle">As a Software Developer and System Administrator at Unity University in Ethiopia, my tasks include: developing and maintaining WordPress website, managing and maintaining computer systems, networks, and servers,  providing technical support to users,	collaborating with IT professionals and departments,	staying updated on emerging technologies and trends.
+                                </P>
+                            <hr>
+                            <h6 class="title text-danger">OCT 2022 - OCT 2024</h6>
+                            <P>Software Developer</P>
+                            <P class="subtitle">As a software developer and control specialist at the Center for Adolescent Girls Health for free service, I designed and implemented user-friendly applications and WordPress website, ensuring seamless functionality. I excelled in quality control, conducting thorough testing and debugging.</P>
+                            <hr>
+                            <h6 class="title text-danger">MAY 2023 - JULY 2023</h6>
+                            <P>E-Commerce Web Application | Angular and .Net</P>
+                            <P class="subtitle">Developed an e-commerce application which have robust features. Developed with Angular and .Net.
+                                </P>
+                            <hr>
+                            <h6 class="title text-danger">AUG 2023 – SEPT 2023</h6>
+                            <P>Guideline For Midwives Flutter Application</P>
+                            <P class="subtitle">Developed a Flutter app for Center for Adolescent Girls Health Ethiopia, aiding midwives in delivering quality care. Created intuitive UI, patient management features, medical resources, decision support tools. Ensured privacy, conducted testing, and provided documentation/training.
+                                </P>
+                            <hr>
+                            <h6 class="title text-danger">FEB 2021 – SEPT 2021 </h6>
+                            <P>Health Management Web Application | Angular and Spring Boot</P>
+                            <P class="subtitle">Developed a health management software for three hospitals on a freelance basis. Developed with Angular and .Net.
+                                </P>
+                            <hr>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="mt-2">
+                                <h4>Education</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h6 class="title text-danger">JUNE 2021 - JUNE 2024</h6>
+                            <P>BSc. Computer Science | Addis Ababa University</P>
+                            <P class="subtitle">I have completed with very great distniction. And on our Graduate project, we have worked on the project titled "Smart Supply Chain Management for Coffee and Teff in Ethiopia" as part of my undergraduate studies. This project encompasses the integration of AI algorithms for demand and supply analysis, as well as price forecasting within the Ethiopian coffee and teff supply chain. Additionally, the project involves the development of a location tracking feature utilizing GPS technology to optimize delivery services.</P>
+                            <hr>
+                            <h6 class="title text-danger">MAR 2020 - JAN 2021</h6>
+                            <P>Full-Stack Development | Angular | Spring Boot</P>
+                            <P class="subtitle">About a year software development program. Which has given from volunteers of Kagnew boot academy America. </P>
+                            
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-header">
+                             <div class="pull-left">
+                                 <h4 class="mt-2">Skills</h4>
+                                 <span class="line"></span>  
+                             </div>
+                         </div>
+                         <div class="card-body pb-2">
+                            <h6>Flutter</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Angular</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>.Net</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Spring Boot</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Node.js</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>PHP</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Python</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Nest.JS</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 85%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Java</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Kotlin</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>React</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 60%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                         </div>
+                     </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Internships</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                            <h6 class="title text-danger">JUL 2023 -    AUG 2023</h6>
+                            <P>IT Technician Internship</P>
+                            <P class="subtitle">As a System Administrator at CBE, my tasks include: maintaining software applications, managing and maintaining computer systems, networks, and servers, providing technical support to users,  collaborating with IT professionals and departments, staying updated on emerging technologies and trends.
+                                </P>
+                            <hr>
+                            <h6 class="title text-danger">JULY 2023 - AUG 2023 </h6>
+                            <P>Internship as Python Developer</P>
+                            <P class="subtitle">
+                                In this remote internship my tasks include: Writing Python scripts for basic data manipulation, implementing simple algorithms and data structures in Python, creating a basic RESTful API using a Python framework, writing and executing basic unit tests for Python functions, finished with 3 python simple projects
+                                </P>
+                            <hr>
+                            <h6 class="title text-danger">APR 2023 – JUL 2023</h6>
+                            <P>Internship as Front-end Developer | Flutter | Angular</P>
+                            <P class="subtitle">
+                                There I have done some tasks and gain solid understanding like: Building reusable UI components, integrating with backend APIs, implementing state management solutions, developing responsive user interfaces,writing unit tests for components, develop apps with Angular and Flutter.
+                                </P>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="card">
+                       <div class="card-header">
+                            <div class="pull-left">
+                                <h4 class="mt-2">Languages</h4>
+                                <span class="line"></span>  
+                            </div>
+                        </div>
+                        <div class="card-body pb-2">
+                           <h6>English</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <h6>Amharic</h6>
+                            <div class="progress mb-3">
+                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-dark text-center" id="success">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-6 col-lg-3">
+                    <div class="row ">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-alarm-clock icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">1000</h1>
+                            <p class="text-light mb-1">Hours Worked</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-layers-alt icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">50</h1>
+                            <p class="text-light mb-1">Project Finished</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-face-smile icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">5K</h1>
+                            <p class="text-light mb-1">Happy Clients</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="row">
+                        <div class="col-5 text-right text-light border-right py-3">
+                            <div class="m-auto"><i class="ti-heart-broken icon-xl"></i></div>
+                        </div>
+                        <div class="col-7 text-left py-3">
+                            <h1 class="text-danger font-weight-bold font40">2k</h1>
+                            <p class="text-light mb-1">Coffee Drinked</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="service">
+        <div class="container">
+            <h2 class="mb-5 pb-4"><span class="text-danger">My</span> Services</h2>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-mobile text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Mobile Application Development</h5>
+                            <h6>Main</h6>
+                            <P class="subtitle">I specialize in Mobile Application Development, with extensive experience in crafting high-quality, dynamic apps using Flutter. While Flutter is my main strength, I am also proficient in Kotlin and Java, allowing me to adapt to your project's needs quickly. Whether you need a new app or enhancements to an existing one, I am dedicated to delivering top-notch solutions that exceed your expectations.</br> <strong>Let's bring your app idea to life!</strong></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-world text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Web Application Development</h5>
+                            <h6>Main</h6>
+                            <P class="subtitle">I offer comprehensive Web Application Development services, specializing in Angular and .NET to create robust and scalable web solutions. My expertise ensures intuitive user interfaces and efficient back-end systems. Additionally, I am proficient in Node.js, React, and Next.js, and my ability to learn quickly allows me to adapt to any project requirements. Whether building from scratch or enhancing existing applications, I deliver exceptional web development solutions tailored to your needs.
+                            </br> <strong>Let's create something amazing together!</strong></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-bolt text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Chat Bots Development</h5>
+                            <h6>Additional</h6>
+                            <P class="subtitle">I provide Chatbot Development services to enhance user engagement and streamline interactions. Leveraging advanced technologies, I create intelligent chatbots that can understand and respond to user queries effectively. Whether you need a chatbot for customer support, sales, or any other application, I deliver solutions that are intuitive, reliable, and tailored to your specific requirements. 
+                            </br><strong>Let's automate your communication and elevate your user experience!</strong></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-wordpress text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">Wordpress website development</h5>
+                            <h6>Additional</h6>
+                            <P class="subtitle">I offer professional WordPress Development services to help you create and maintain stunning websites. With experience in customizing themes, plugins, and ensuring responsive design, I can build or enhance your WordPress site to meet your unique needs. Whether you're looking to launch a new site or optimize an existing one, my skills ensure a seamless and efficient development process. </br><strong>Let's make your WordPress site stand out!</strong></P>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card mb-5">
+                       <div class="card-header has-icon">
+                            <i class="ti-camera text-danger" aria-hidden="true"></i>
+                        </div>
+                        <div class="card-body px-4 py-3">
+                            <h5 class="mb-3 card-title text-dark">UI / UX Design</h5>
+                            <h6>Addtional</h6>
+                            <P class="subtitle">I provide top-notch UI/UX Design services using Canva and Figma to create visually appealing and user-friendly interfaces. My design process focuses on enhancing user experience while ensuring that your app or website looks stunning. Whether you need a complete design overhaul or a fresh new look, I am dedicated to delivering designs that are both beautiful and functional. 
+                            </br><strong>Let's create an engaging and intuitive user experience together!</strong></P>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section bg-dark py-5" id="hire">
+        <div class="container text-center">
+            <h2 class="text-light mb-5 font-weight-normal">I Am Available For Work</h2>
+            <button class="btn bg-primary w-lg" >Hire me</button>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section bg-custom-gray" id="portfolio">
+        <div class="container">
+            <h1 class="mb-5"><span class="text-danger">My</span> Portfolio</h1>
+            <div class="portfolio">
+                <div class="filters">
+                    <!-- <a href="#" data-filter=".new" class="active">
+                        Mobile
+                    </a> -->
+                    <a href="#" data-filter=".app" class="active">
+                        App
+                    </a>
+                    <!-- <a href="#" data-filter=".branding">
+                        WordPress
+                    </a> -->
+                    <a href="#" data-filter=".design">
+                        Design
+                    </a>
+                </div>
+                <div class="portfolio-container"> 
+                    <div class="col-md-6 col-lg-4 app new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web1.png" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web1.png"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">U-Chain</h6>
+                                    <p class="subtitle">Smart Supply Chain Management Application built with angular and Django</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 app new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web2.png" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web2.png"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">U-Chain</h6>
+                                    <p class="subtitle">Smart Supply Chain Management Application built with angular and Django</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 app new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web3.png" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web3.png"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">U-Chain</h6>
+                                    <p class="subtitle">Smart Supply Chain Management Application built with angular and Django</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 app new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web4.png" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web4.png"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">U-Chain</h6>
+                                    <p class="subtitle">Smart Supply Chain Management Application built with angular and Django</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 app new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web7.jpg" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web7.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">Huge Hospital Management System</h6>
+                                    <p class="subtitle">Huge hospital management system built in Angular and Spring boot with robust features. And also covers full patient flow through the hospital.</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 app new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web8.jpg" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web8.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">Online Bus Ticket</h6>
+                                    <p class="subtitle">Online bus ticket booking application built with Angular and .Net</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 app new">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/web9.jpg" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/web9.jpg"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">Online Bus Ticket</h6>
+                                    <p class="subtitle">Online bus ticket booking application built with Angular and .Net</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 design">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/design1.png" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/design1.png"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">U-chain</h6>
+                                    <p class="subtitle">Canva Design for Smart supply chain management software</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 design">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/design2.png" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/design2.png"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">U-chain</h6>
+                                    <p class="subtitle">Canva Design for Smart supply chain management software</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 design">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/design3.png" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/design3.png"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">U-chain</h6>
+                                    <p class="subtitle">Canva Design for Smart supply chain management software</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 design">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/design4.png" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/design4.png"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">U-chain</h6>
+                                    <p class="subtitle">Canva Design for Smart supply chain management software</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 design">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/design5.png" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/design5.png"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">U-chain</h6>
+                                    <p class="subtitle">Canva Design for Smart supply chain management software</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 design">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/design6.png" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/design6.png"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">U-chain</h6>
+                                    <p class="subtitle">Canva Design for Smart supply chain management software</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 design">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/design7.png" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/design7.png"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">U-chain</h6>
+                                    <p class="subtitle">Canva Design for Logo of Smart supply chain management project</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                    <div class="col-md-6 col-lg-4 design">
+                        <div class="portfolio-item">
+                            <img src="assets/imgs/design8.png" class="img-fluid">
+                            <div class="content-holder">
+                                <a class="img-popup" href="assets/imgs/design8.png"></a>
+                                <div class="text-holder">
+                                    <h6 class="title">Womens Day</h6>
+                                    <p class="subtitle">Canva Design for Unity University Womens Day</p>
+                                </div>
+                            </div>   
+                        </div>             
+                    </div>
+                </div> 
+            </div>  
+        </div>            
+    </section>
+
+    <div class="section contact" id="contact">
+        <div class="container">
+            <div class="row">
+                <!-- <div class="col-lg-8">
+                    <div class="contact-form-card">
+                        <h4 class="contact-title">Send a message</h4>
+                        <form id="contact-form" action="">
+                            <input type="hidden" name="contact_number" value="697483">
+                            <div class="form-group">
+                                <input  class="form-control" type="text" placeholder="Name *" name="user_name" required>
+                            </div>
+                            <div class="form-group">
+                                <input class="form-control" type="email" placeholder="Email *" name="user_email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id=" placeholder="Message *" name="message" rows="7" required></textarea>
+                            </div>
+                            <div class="form-group ">
+                                <input type="submit" class="form-control btn btn-primary" value="send">
+                            </div>
+                        </form>
+                    </div>
+                </div> -->
+                <div class="col-lg-4 m-auto">
+                    <div class="contact-info-card ml-auto">
+                        <h4 class="contact-title">Get in touch</h4>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-mobile icon-md"></i>
+                            </div>
+                            <div class="col-10 ">
+                                <h6 class="d-inline">Phone : <br> <span class="text-muted">+ (251) 996-995-878</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-map-alt icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Address :<br> <span class="text-muted">Arada Sub-City, Addis Ababa, Ethiopia</span></h6>
+                            </div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-1 pt-1 mr-1">
+                                <i class="ti-envelope icon-md"></i>
+                            </div>
+                            <div class="col-10">
+                                <h6 class="d-inline">Email :<br> <span class="text-muted">sawerkit23@gmail.com</span></h6>
+                            </div>
+                        </div>
+                        <ul class="social-icons pt-4">
+                            <li class="social-item"><a class="social-link text-dark" href="https://t.me/esamif" target="_blank"><i class="ti-email" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://www.linkedin.com/in/samuel-befikadu-2a967521a/" target="_blank"><i class="ti-linkedin" aria-hidden="true"></i></a></li>
+                            <li class="social-item"><a class="social-link text-dark" href="https://github.com/belm960" target="_blank"><i class="ti-github" aria-hidden="true"></i></a></li>
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <footer class="footer py-3">
+        <div class="container">
+            <p class="small mb-0 text-light">
+                &copy; <script>document.write(new Date().getFullYear())</script> Created With <i class="ti-heart text-danger"></i> By <a href="http://github.com/belm960" target="_blank"><span class="text-danger" title="More About Samuel Befikadu">Samuel Befikadu</span></a> 
+            </p>
+        </div>
+    </footer>
+
+	<!-- core  -->
+    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+
+    <!-- bootstrap 3 affix -->
+    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
+
+    <!-- Isotope  -->
+    <script src="assets/vendors/isotope/isotope.pkgd.js"></script>
+    
+    <!-- Google mpas -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtme10pzgKSPeJVJrG1O3tjR6lk98o4w8&callback=initMap"></script>
+
+    <!-- JohnDoe js -->
+    <script src="assets/js/samuel_befikadu.js"></script>
+
+</body>
+</html>
